@@ -1,0 +1,23 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/phoenix_work
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+
+  servlet:
+    multipart:
+      max-file-size: 30MB
+
+mybatis:
+  mapper-locations: classpath*:/myBatis/*.xml # Tells mybatis to look in resources/mybatis for XML
+  configuration:
+    map-underscore-to-camel-case: true #converts underscore of db into camelcase

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Your Travel partner</title>
+
+
+    <!-- BootStrap -->
+    <link
+	th:href="@{https://cdn.jsdelivr.net/npm/bootstrap5.0.2/dist/css/bootstrap.min.css}"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+	
+     <!-- cssFile -->
+     <link rel="stylesheet" th:href="@{/css/Home.css}">
+     <!-- FontAwesome -->
+     <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css}" >
+     <!-- boootstrap icons -->
+     <link rel="stylesheet" th:href="@{https://cdn.jsdelivr.net/npm/bootstrap-icons1.10.5/font/bootstrap-icons.min.css}">
+
+    
+    <!-- google fonts -->
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+    <link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+    <link th:href="@{https://fonts.googleapis.com/css2family=Heebo:wght400500600family=Nunito:wght600700display=swap}" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <div th:insert="Header.html"></div>
+
+
+
+      <!-- herosection -->
+      <div class="container-fluid position-relative p-0">
+      
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3">Enjoy Your Holidays With Us</h1>
+                        <p class="fs-4 text-white mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum commodi quod incidunt asperiores impedit culpa</p>
+                        <div class="position-relative w-75 mx-auto">
+                            <!-- input box -->
+                            <input type="text" class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" placeholder="Eg: Kathmandu">
+                            <!-- button -->
+                            <button type="submit" class="btn btn-success rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+     <!-- About Section -->
+     <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6" style="min-height: 400px;">
+               <div class="position-relative h-100">
+                <img th:src="@{/Image/about.jpg}" alt="" style="object-fit: cover;" class="img-fluid position-absolute w-100 h-100">
+               </div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="section-title bg-white text-start text-success pe-3 ">About Us</h4>
+                 <h1 class="mb-4">Welcome to <span class="text-success">Your Travel Partner</span></h1>
+                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius quis quasi quo, rem porro.</p>
+                 <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, architecto amet ea enim iste atque.</p>
+                 <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-success me-2"></i>First Class Flights</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right text-success me-2"></i>Five Star Accomondations</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right text-success me-2"></i>24/7 Services</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right text-success me-2"></i>Latest Model Vehicles</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right text-success me-2"></i>Professional Tour Guides</p>
+
+                    </div>
+                 </div>
+
+                 <!-- button -->
+                 <div class="btn btn-success py-3 px-5 mt-2">Read More</div>
+            </div>
+        </div>
+      </div>
+
+     </div>
+
+
+     <!-- Service Section -->
+     <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h4 class="section-title text-center bg-white text-success px-3  ">Services</h4>
+                <h1 class="mb-5">Our Services</h1>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3 p-3">
+                        <i class="fa fa-3x fa-globe text-info mb-4"></i>
+                        <h5>Nepal Tours</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eum facere inventore.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3 p-3">
+                        <i class="fa fa-3x fa-user text-info mb-4"></i>
+                        <h5>Travel Guides</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eum facere inventore.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3 p-3">
+                    <i class="fa fa-3x fa-hotel text-info mb-4"></i>
+                    <h5>Hotel Reservation</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eum facere inventore.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3 p-3">
+                        <i class="fa fa-3x fa-cog text-info mb-4"></i>
+                        <h5>Event Management</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eum facere inventore.</p>
+                    </div>
+                </div>
+
+                
+             
+
+                
+
+            </div>
+
+            </div>
+        </div>
+
+        <!-- destination section -->
+        <div class="container-xxl py-5 destination">
+            <div class="container">
+                <div class="text-center">
+                    <h4 class="section-title bg-white text-center text-success px-3 ">
+                        Destination
+                    </h4>
+                    <h1 class="mb-5">Popular Destination</h1>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="row g-3">
+
+                            <div class="col-lg-12 col-md-12">
+                                <a href="" class="d-block position-relative overflow-hidden">
+                                    <img th:src="@{/Image/destination-1.jpg}" alt="" class="img-fluid">
+                                    <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% Off</div>
+                                    <div class="bg-white fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2 ">MardiHimal</div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <a href="" class="d-block position-relative overflow-hidden">
+                                    <img th:src="@{/Image/destination-2.jpg}" alt="" class="img-fluid">
+                                    <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">50% Off</div>
+                                    <div class="bg-white fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2 ">Kathmandu</div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <a href="" class="d-block position-relative overflow-hidden">
+                                    <img th:src="@{/Image/destination-3.jpg}" alt="" class="img-fluid">
+                                    <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% Off</div>
+                                    <div class="bg-white fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2 ">Everest</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6" style="min-height: 350px;">
+                    <a href="" class="d-block position-relative h-100 overflow-hidden ">
+                        <img th:src="@{/Image/destination-4.jpg}" alt="" class="img-fluid position-absolute w-100 h-100" style="object-fit: cover;">
+                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% Off</div>
+                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2 "> Pokhara</div>
+                    </a>
+                    </div>
+
+                     
+                  
+                </div>
+                <div class="col-md-4 p-5 m-auto">
+                    <button class="btn btn-success text-center py-3" type="submit" >Load More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======Package Section========= -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h4 class="section-title bg-white text-center text-success px-3">Packages</h4>
+                    <h1 class="mb-5">Awesome packages</h1>
+
+                </div>
+                <div class="row g-4 justify-content-center">
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img th:src="@{/Image/package-1.jpg}" alt="" class="img-fluid">
+                            </div>
+                            <div class="d-flex border-bottom">
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-map-marker-alt text-success me-2"></i>Thailand
+                                </small>
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-calendar-alt text-success me-2"></i>3 days
+                                </small>
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-user text-success me-2"></i>2 Person 
+                                </small>
+                                
+                            </div>
+
+                            <div class="text-center p-4">
+                                <h3 class="mb-0">$130.00</h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                </div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <div class="d-flex justify-content-center  mb-2">
+                                    <a href="" class="btn btn-sm btn-success px-3 " style="border-radius:  30px 0 0 30px;">Read More</a>
+                                    <a href="" class="btn btn-sm btn-success px-3 " style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img th:src="@{/Image/package-2.jpg}" alt="" class="img-fluid">
+                            </div>
+                            <div class="d-flex border-bottom">
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-map-marker-alt text-success me-2"></i>Thailand
+                                </small>
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-calendar-alt text-success me-2"></i>3 days
+                                </small>
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-user text-success me-2"></i>2 Person 
+                                </small>
+                                
+                            </div>
+
+                            <div class="text-center p-4">
+                                <h3 class="mb-0">$130.00</h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                </div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <div class="d-flex justify-content-center  mb-2">
+                                    <a href="" class="btn btn-sm btn-success px-3 " style="border-radius:  30px 0 0 30px;">Read More</a>
+                                    <a href="" class="btn btn-sm btn-success px-3 " style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img th:src="@{/Image/package-3.jpg}" alt="" class="img-fluid">
+                            </div>
+                            <div class="d-flex border-bottom">
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-map-marker-alt text-success me-2"></i>Thailand
+                                </small>
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-calendar-alt text-success me-2"></i>3 days
+                                </small>
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-user text-success me-2"></i>2 Person 
+                                </small>
+                                
+                            </div>
+
+                            <div class="text-center p-4">
+                                <h3 class="mb-0">$130.00</h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                    <small class="fa fa-star text-success"></small>
+                                </div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <div class="d-flex justify-content-center  mb-2">
+                                    <a href="" class="btn btn-sm btn-success px-3 " style="border-radius:  30px 0 0 30px;">Read More</a>
+                                    <a href="" class="btn btn-sm btn-success px-3 " style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-5 m-auto">
+                        <button class="btn btn-success text-center py-3" type="submit" >Load More</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- =================Booking Section================= -->
+        <div class="container-xxl py-5"> 
+            <div class="container">
+                <div class="booking p-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-md-6 text-white">
+                            <h6 class="text-white text-uppercase">Booking</h6>
+                            <h1 class="text-white mb-4">Online Booking</h1>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae. Quia possimus magni, dolorum laborum consectetur expedita maiores.</p>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam obcaecati molestiae culpa nostrum dignissimos ratione laudantium natus eius enim aspernatur.</p>
+                            <a href="" class="btn btn-outline-light py-3 px-5 mt-2">Read More</a>
+
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-white mb-4">
+                                Book A Tour
+                            </h1>
+                            <form action="",method="post">
+                                <div class="row g-3">
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-transparent " id="name" placeholder="Your Name">
+                                            <label for="name">Your name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control bg-transparent " id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating" id="date3">
+                                            <input type="date" class="form-control bg-transparent " id="datetime" >
+                                            <label for="datetime">Date & Time</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- ====selectbox=== -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select name="" id="select1" class="form-select bg-transparent">
+                                                <option value="1">Destination 1</option>
+                                                <option value="2">Destination 2</option>
+                                                <option value="3">Destination 3</option>
+                                                
+                                            </select>
+                                            <label for="select1">Destination</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px;"></textarea>
+                                            <label for="message">Special Request</label>
+                                        </div>
+                                    </div>
+                                    <!-- ====button==== -->
+                                    <div class="col-12">
+                                        <button class="btn btn-outline-light w-100 py-3" type="submit" >Book Now</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- ==================Process Start============== -->
+      <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4">
+                <h4 class="section bg-white text-center text-success px-3 ">Process</h4>
+                <h1 class="mb-5">Easy Steps</h1>
+
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+
+                <div class="col-lg-4 col-sm-6 text-center pt-4">
+                    <div class="position-relative border border-info pt-5 pb-4 px-4 ">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-info rounded-circle position-absolute  top-0 start-50 translate-middle shadow" style="height: 100px; width: 100px;">
+                        <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose A Destination</h5>
+                        <hr class="w-25 mx-auto bg-primary mt-0 ">
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugit distinctio velit?</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center pt-4">
+                    <div class="position-relative border border-info pt-5 pb-4 px-4 ">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-info rounded-circle position-absolute  top-0 start-50 translate-middle shadow" style="height: 100px; width: 100px;">
+                        <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Pay Online</h5>
+                        <hr class="w-25 mx-auto bg-primary mt-0 ">
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugit distinctio velit?</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center pt-4">
+                    <div class="position-relative border border-info pt-5 pb-4 px-4 ">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-info rounded-circle position-absolute  top-0 start-50 translate-middle shadow" style="height: 100px; width: 100px;">
+                        <i class="fa fa-plane fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Fly Today</h5>
+                        <hr class="w-25 mx-auto bg-primary mt-0 ">
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugit distinctio velit?</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <!-- ========================Team Secion===================== -->
+      <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h4 class="section-title bg-white  text-center text-success px-3">Travel Guide</h4>
+                <h1 class="mb-5">Meet Our Guide</h1>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img th:src="@{/Image/team-1.jpg}" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center " style="margin-top: -19px;">
+                        <a href="" class="btn btn-square mx-1">
+                             <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                       </a>
+                       <a href="" class="btn btn-square mx-1">
+                        <i class="fab fa-instagram"></i>
+                       </a>
+                        </div>
+                        <div class="text-center p-4">
+                             <h5 class="mb-0">Full Name</h5>
+                             <small>Destination</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img th:src="@{/Image/team-2.jpg}" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center " style="margin-top: -19px;">
+                        <a href="" class="btn btn-square mx-1">
+                             <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                       </a>
+                       <a href="" class="btn btn-square mx-1">
+                        <i class="fab fa-instagram"></i>
+                       </a>
+                        </div>
+                        <div class="text-center p-4">
+                             <h5 class="mb-0">Full Name</h5>
+                             <small>Destination</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img th:src="@{/Image/team-3.jpg}" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center " style="margin-top: -19px;">
+                        <a href="" class="btn btn-square mx-1">
+                             <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                       </a>
+                       <a href="" class="btn btn-square mx-1">
+                        <i class="fab fa-instagram"></i>
+                       </a>
+                        </div>
+                        <div class="text-center p-4">
+                             <h5 class="mb-0">Full Name</h5>
+                             <small>Destination</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img th:src="@{/Image/team-4.jpg}" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center " style="margin-top: -19px;">
+                        <a href="" class="btn btn-square mx-1">
+                             <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                       </a>
+                       <a href="" class="btn btn-square mx-1">
+                        <i class="fab fa-instagram"></i>
+                       </a>
+                        </div>
+                        <div class="text-center p-4">
+                             <h5 class="mb-0">Full Name</h5>
+                             <small>Destination</small>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+      </div>
+
+      <!-- ========================Testimonialsection============== -->
+      <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h4 class="section-title bg-white  text-center text-success px-3">Testimonial</h4>
+                <h1 class="mb-5">Our Clients Say!!!</h1>
+            </div>
+
+            <div class="owl-carousel testimonial-carousel position-relative">
+
+                <div class="row g-4">
+
+                <div class="col-lg-3 testimonial-item bg-white text-center border p-4">
+                    <img th:src="@{/Image/testimonial-1.jpg}" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3 " style="height: 80px; width: 80px;">
+                    <h5 class="mb-0">Abishek khadka</h5>
+                    <p>Kathmandu,Nepal</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus asperiores error expedita?</p>
+                </div>
+
+                <div class=" col-lg-3 testimonial-item bg-white text-center border p-4">
+                    <img th:src="@{/Image/testimonial-2.png}" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3 " style="height: 80px; width: 80px;">
+                    <h5 class="mb-0">Yubraj khadka</h5>
+                    <p>Lalitpur,Nepal</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus asperiores error expedita?</p>
+                </div>
+
+                <div class="col-lg-3 testimonial-item bg-white text-center border p-4">
+                    <img th:src="@{/Image/testimonial-3.jpg}" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3 " style="height: 80px; width: 80px;">
+                    <h5 class="mb-0">Alok Khadka</h5>
+                    <p>Achham,Nepal</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus asperiores error expedita?</p>
+                </div>
+
+                <div class="col-lg-3 testimonial-item bg-white text-center border p-4">
+                    <img th:src="@{/Image/testimonial-4.jpg}" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3 " style="height: 80px; width: 80px;">
+                    <h5 class="mb-0">Bishal Khadka</h5>
+                    <p>Doti,Nepal</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus asperiores error expedita?</p>
+                </div>
+
+               </div>
+            </div>
+
+        </div>
+      </div>  
+      
+      <!-- ====================footer Section======================== -->
+      
+
+<div th:insert="Footer.html"></div>
+
+  
+
+</body>
+</html>

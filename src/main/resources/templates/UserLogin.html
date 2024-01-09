@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css}" >
+    <link rel="stylesheet" th:href="@{/css/Signup.css}">
+    <title>signin-signup</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form th:action="@{/login}" method="post" class="sign-in-form">
+            <p style="color:red">[[${errorLogin}]]</p>
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="userName" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <button type="submit" value="Login" class="btn">Login</button>
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Dont have an account? <a href="#" id="sign-up-btn2">Sign up </a></p>
+            </form>
+
+            <form th:action="@{/signup}" method="post" class="sign-up-form">
+                <p style="color:red">[[${userName}]]</p>
+                <p style="color:red">[[${processError}]]</p>
+                <h2 class="title">Sign Up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input name="userName" type="text" placeholder="UserName">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input name="email" type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input name="password" type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in </a></p>
+            </form>
+
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Member of YourTravelPartner?</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo.</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img th:src="@{/Image/undraw_sign_in_re_o58h.svg}" class="image">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New To YourTravelPartner?</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo.</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img th:src="@{/Image/undraw_sign_up_n6im.svg}" alt="" class="image">
+            </div>
+
+        </div>
+    </div>
+    <script th:src="@{/js/Signup.js}"></script>
+</body>
+
+</html>
